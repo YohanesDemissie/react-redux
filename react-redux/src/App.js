@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import lendMe from '../src/images/lendMe.png';
 import appStores from '../src/images/appStores.png'
+import screenShot from '../src/images/screenShot.png'
 
 class App extends Component {
   render() {
@@ -39,6 +40,20 @@ class App extends Component {
 
         <h4 className="comingSoon">Coming soon to</h4>
         <img className="appStores" src={appStores} alt="app stores logos"/>
+
+        <section>
+          <p className="welcomeText">
+            Welcome to LendMe Inc., a community based application built to reach out to bond communities and lend a helping hand.
+          </p>
+
+          <span>
+            <p>
+              Whether solo or partnered, LendMe allows you to self-identify, express your preferences and boundaries, and find others who are into whatever you're into.
+            </p>
+            <img className="screenShot" src={screenShot} alt="application screenshot" />
+          </span>
+
+        </section>
       </div>
     );
   }
