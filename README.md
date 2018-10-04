@@ -18,3 +18,8 @@ mkdir styles
 touch styles/main.css
 open terminal and run "npm build"
 
+create-react-app
+
+#Depenecdency video
+26.1 40+ minute mark
+
