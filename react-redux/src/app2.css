@@ -1,0 +1,18 @@
+header{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+nav{
+  display: inline;
+};
+
+img{ /*may not be being used. revisit when image is resized for proper functionality testing */
+  /* padding-left: 20%; */
+  max-width: 1px;
+}
+
+a{
+  float: right;
+  padding-left: 2%;
+};
