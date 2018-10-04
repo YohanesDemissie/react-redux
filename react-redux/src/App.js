@@ -12,7 +12,7 @@ class App extends Component {
           <nav>
             <ul>
               <li>
-                <img className="headerImg" src={lendMe} alt="LendMeInc. Logo" />
+                <img className="headerImg" src={lendMe} alt="LendMeInc. Logo" align="middle"/><b>LendMe</b>
               </li>
               <li>
                 <a href="events.js" alt="events link"> events</a>
@@ -30,20 +30,22 @@ class App extends Component {
         <img className="mainLogo" src={lendMe} alt="LendMeInc. Logo" />
 
         <h1 className="mainTitle">
-          LendMeInc.
+          LendMe Inc.
         </h1>
 
         <h4 className="subHeader">Sign up for beta and get updates about launch:</h4>
-        <input className="emailInput" placeholder="email@lendme.com"/>
-        <br />
-        <button className="submitEmail">Submit</button>
+        <section className="signUp">
+          <input className="emailInput" placeholder="email@lendme.com" />
+          <br />
+          <button className="submitEmail">Submit</button>
+        </section>
 
         <h4 className="comingSoon">Coming soon to</h4>
         <img className="appStores" src={appStores} alt="app stores logos"/>
 
-        <section>
+        <section className="footer">
           <p className="welcomeText">
-            Welcome to LendMe Inc., a community based application built to reach out to bond communities and lend a helping hand.
+            <b>Welcome to LendMe Inc., a community based application built to reach out to bond communities and lend a helping hand.</b>
           </p>
 
           <span>
