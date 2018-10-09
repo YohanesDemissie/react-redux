@@ -4,6 +4,7 @@ import './App.css';
 import lendMe from '../src/images/lendMe.png';
 import appStores from '../src/images/appStores.png';
 import screenShot from '../src/images/screenShot.png';
+import Footer from './components/Footer';
 
 class Landing extends Component {
   render() {
@@ -13,22 +14,19 @@ class Landing extends Component {
         <nav>
           <ul>
             <li>
-              <img className="headerImg" src={lendMe} alt="LendMeInc. Logo" align="middle" /><b>LendMe</b>
+                <a href="/" alt="home link"><img className="headerImg" src={lendMe} alt="LendMeInc. Logo" align="middle" /><b>LendMe</b></a>
             </li>
-            <li>
-              <a href="/events" alt="events link"> events</a>
-            </li>
-            <li>
+              <li className="links">
               <a href="/about" alt="about us link">about us</a>
             </li>
-            <li>
+              <li className="links">
               <a href="/mission" alt="team mission link">mission</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <img className="mainLogo" src={lendMe} alt="LendMeInc. Logo" />
+        <a href="/" alt="home link"><img className="mainLogo" src={lendMe} alt="LendMeInc. Logo" /></a>
 
       <h1 className="mainTitle">
         LendMe Inc.
@@ -50,16 +48,26 @@ class Landing extends Component {
         </p>
 
         <span>
-          <p>
-            Whether solo or partnered, LendMe allows you to self-identify, express your preferences and boundaries, and find others who are into whatever you're into.
-            </p>
+          <p style={styles}>
+            <b>Whether solo or partnered, LendMe allows you to self-identify, express your preferences and boundaries, and find others who are into whatever you're into.</b>
+          </p>
           <img className="screenShot" src={screenShot} alt="application screenshot" />
         </span>
 
       </section>
+      <Footer />
       </div>
     )
   }
 }
+
+const styles = {
+    borderWidth: 4,
+    borderStyle: 'none',
+    borderColor: 'black',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    color: 'rgba(0, 0, 0, 0.6)',
+    padding: 50
+  };
 
 export default Landing;
