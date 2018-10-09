@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import '../styles/aboutUs.css'
 import '../App.css';
 import lendMe from '../images/lendMe.png';
-import screenShot from '../images/screenShot.png'
+import Amanuail from '../images/amanuail.jpg';
+import Nancy from '../images/Nancy-Pappas.png';
+import Yohannes from '../images/Yohannes-Tsega.png';
+import Chris from '../images/Chris-Smith.jpg';
 import Footer from './Footer.js'
 
 class AboutUs extends Component {
@@ -32,12 +35,13 @@ class AboutUs extends Component {
         </h1>
 
         <section className="about-us-body">
-          <h2>
-            We Created LendMe with the intent of bringing communities together, building selfsucficient enviornents, turning neighbors to helpful members of their community.
+          <h2 className="aboutLM-intro">
+            We Created LendMe with the intent of bringing communities together, building self-sufficient environments, turning neighbors to helpful members of their community.
           </h2>
 
-          <p className="about-ceo-quote">
-            "As someone who struggled through college with little support on such a big campus, I want to make sure students have the necessary resources to succeed in their academic endeavours while bring a large campus of various diversitites, together"
+          <p className="about-ceo-quote" style={styles.borderStyle}>
+            "As someone who struggled through college with little support on such a big campus, I want to make sure students have the necessary resources to succeed in their academic endeavors while bring a large campus of various diversities, together"
+            <br />
             <br />
               -Amanuail Mekonen, Proud Founder and CEO
           </p>
@@ -47,48 +51,57 @@ class AboutUs extends Component {
               Our Team
             </h1>
 
-            <hr />
+            <hr width="70%"/>
 
             <div style={styles.inlineLayout}>
             <h2 className="dev-names">
-              Amanuail Mekonen, <br /> CEO
+                Amanuail Mekonen, <br />  Proud Founder and CEO
           </h2>
-              <img style={styles.img} src="https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450" alt="panda" />
+              <img style={styles.img} src={Amanuail} width="200" alt="Amanuail Ambaye" />
             <p className="dev-bio">
-              After graduating from the University of Tennessee with a degree in political science, Amanda spent 15 years managing and coordinating local, state, and federal campaigns for a wide spectrum of candidates on Capitol Hill and K Street. As a master’s candidate at Harvard University, she became fascinated by the capacity of game theory to disentangle the complexities of human behavior and the application of game theory to location based dating.
+              Amanuail is a strong-willed individual from Seattle. A paralegal, Amanuail is also
+              Chairman of Seafair&#39;s Community Relations Committee. Responsible for designing &amp;
+              constructing the user experience of LendMe, Amanuail’s dedication towards LendMe
+              Inc. and it’s mobile application LendMe continues to strengthen with the determination
+              and commitment of a true leader. With multiple evolution&#39;s nearing their completions,
+              the potential growth of the LendMe Inc. company will soon come to fold.
           </p>
           </div>
 
             <div style={styles.inlineLayout}>
-            <h2 className="dev-names">
-              Lee Carter, <br /> Lead Developer
+              <h2 className="dev-names">
+                Yohannes Tsegay, <br />Senior Executive Adviser
           </h2>
-              <img style={styles.img} src="https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450" alt="panda" />
-            <p className="dev-bio">
-              After graduating from the University of Tennessee with a degree in political science, Amanda spent 15 years managing and coordinating local, state, and federal campaigns for a wide spectrum of candidates on Capitol Hill and K Street. As a master’s candidate at Harvard University, she became fascinated by the capacity of game theory to disentangle the complexities of human behavior and the application of game theory to location based dating.
+              <img style={styles.img} src={Yohannes} width="200" alt="panda" />
+              <p className="dev-bio">
+                With multiple stops at up and coming tech startups, to becoming a software engineer
+                for Microsoft, Yohannes now holds as a Senior Executive Director position at Ebay.
+              </p>
+            </div>
+
+            <div style={styles.inlineLayout}>
+              <h2 className="dev-names">
+                Chris Smith, <br />Senior Executive Adviser
+          </h2>
+              <img style={styles.img} src={Chris} width="200" alt="panda" />
+              <p className="dev-bio">
+                With an abundance of executive-held positions on Boeing's 737, 777, &amp; 787 teams
+                throughout his career, Chris also owns TaylorMade Construction Company based in
+                Seattle, WA
           </p>
             </div>
 
             <div style={styles.inlineLayout}>
             <h2 className="dev-names">
-              Michael Jackson, <br />Developer
+                Nancy Pappas, <br /> Senior Marketing Adviser
           </h2>
-              <img style={styles.img} src="https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450" alt="panda" />
+              <img style={styles.img} src={Nancy} width="200" alt="panda" />
             <p className="dev-bio">
-              After graduating from the University of Tennessee with a degree in political science, Amanda spent 15 years managing and coordinating local, state, and federal campaigns for a wide spectrum of candidates on Capitol Hill and K Street. As a master’s candidate at Harvard University, she became fascinated by the capacity of game theory to disentangle the complexities of human behavior and the application of game theory to location based dating.
-          </p>
-          </div>
+              With over a decade of marketing experience under her belt, Nancy brings her expertise
+              from Macy&#39;s, Alaska Airlines, &amp; school districts across Washington.
+            </p>
+            </div>
 
-            <div style={styles.inlineLayout}>
-            <h2 className="dev-names">
-              Yohanes Demissie, <br />Developer
-          </h2>
-              <img style={styles.img} src="https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450" alt="panda" />
-            <p className="dev-bio">
-              After graduating from the University of Tennessee with a degree in political science, Amanda spent 15 years managing and coordinating local, state, and federal campaigns for a wide spectrum of candidates on Capitol Hill and K Street. As a master’s candidate at Harvard University, she became fascinated by the capacity of game theory to disentangle the complexities of human behavior and the application of game theory to location based dating.
-          </p>
-          </div>
-          {/* <img className="screenShot" src={screenShot} alt="mobile screen" /> */}
           </section>
         </section>
         <Footer />
@@ -99,9 +112,11 @@ class AboutUs extends Component {
 
 const styles = {
   borderStyle: {
-    borderWidth: 4,
-    borderStyle: 'solid',
-    borderColor: 'black',
+      borderWidth: 4,
+      borderStyle: 'none',
+      backgroundColor: 'rgba(255, 255, 255, 0.5)',
+      color: 'rgba(0, 0, 0, 0.7)',
+      padding: 50,
   },
 
   inlineLayout: {

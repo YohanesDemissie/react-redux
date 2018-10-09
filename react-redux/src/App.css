@@ -104,7 +104,15 @@ p{
   padding-bottom: 60px;
 }
 
+.aboutLM-intro{
+  padding-top: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+
 .about-us-body{
   background-color: orange;
   padding-bottom: 25px; 
 }
+

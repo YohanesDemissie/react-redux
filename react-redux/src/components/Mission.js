@@ -59,7 +59,7 @@ class Mission extends Component {
               To provide that freedom, #open has to be more than just a dating app–it has to be a community. Maintaining a community requires more than just showing up! We all rely upon each other to ensure that our community remains inclusive, accepting, and friendly.            </p>
           </div>
 
-          <div style={styles.inlineLayout}>
+          <div style={styles.lastPicture}>
             <h3>Education</h3>
             <p>
               <img style={styles.img} src="https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450" alt="panda"/>
@@ -91,6 +91,13 @@ const styles = {
   img: {
     float: 'right',
   },
+
+  lastPicture: {
+    marginBottom: 120,
+    textAlign: 'center',
+    overFlow: 'auto',
+    backgroundColor: 'orange'
+  }
 
 };
 
