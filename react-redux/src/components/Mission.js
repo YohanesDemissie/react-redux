@@ -8,27 +8,29 @@ class Mission extends Component {
   render() {
     return(
       <div>
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <a href="/" alt="home link"><img className="headerImg" src={lendMe} alt="LendMeInc. Logo" align="middle" /><b>LendMe</b></a>
-              </li>
-              <li className="links">
-                <a href="/about" alt="about us link">about</a>
-              </li>
-              <li className="links">
-                <a href="/mission" alt="team mission link">mission</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <section className="footer-comp">
+          <header>
+            <nav>
+              <ul>
+                <li>
+                  <a href="/" alt="home link" style={styles.logoNav}><img className="headerImg" src={lendMe} alt="LendMeInc. Logo" align="middle" /><b >LendMe</b></a>
+                </li>
+                <li className="links" style={styles.nav}>
+                  <a href="/about" alt="about us link" style={styles.nav}><b>about us</b></a>
+                </li>
+                <li className="links" style={styles.nav}>
+                  <a href="/mission" alt="team mission link" style={styles.nav}><b>mission</b></a>
+                </li>
+              </ul>
+            </nav>
+          </header>
 
-        <a href="/" alt="home link"><img className="mainLogo" src={lendMe} alt="LendMeInc. Logo" /></a>
+          <a href="/" alt="home link"><img className="mainLogo" src={lendMe} alt="LendMeInc. Logo" /></a>
 
-        <h1 className="mainTitle">
-          LendMe Inc.
+          <h1 className="mainTitle">
+            LendMe Inc.
         </h1>
+        </section>
 
           <p>
           Our mission at #open goes beyond just dating or hooking up—we're working to create a community where people can create genuine connections.
@@ -42,7 +44,7 @@ class Mission extends Component {
           <h2>
             Our Values
           </h2>
-          <hr />
+          <hr width='700' />
 
           <div style={styles.inlineLayout}>
             <h3>Inclusion</h3>
@@ -75,20 +77,21 @@ class Mission extends Component {
 
 const styles = {
   borderStyle: {
+    borderRadius: 20,
     borderWidth: 4,
-    borderStyle: 'solid',
-    borderColor: 'black',
-    padding: 50
+    borderStyle: 'none',
+    backgroundColor: 'rgba(255, 165, 0, 0.3)',
+    padding: 50,
   },
 
   inlineLayout: {
-    marginBottom: 250,
+    marginBottom: 200,
     textAlign: 'center',
     overFlow: 'auto',
-    backgroundColor: 'orange'
   },
 
   img: {
+    borderRadius: 20,
     float: 'right',
   },
 
@@ -96,7 +99,29 @@ const styles = {
     marginBottom: 120,
     textAlign: 'center',
     overFlow: 'auto',
-    backgroundColor: 'orange'
+  },
+
+  nav: {
+    textDecoration: 'none',
+    color: ' rgb(255, 165, 0)',
+    backgroundColor: 'rgba(255, 255, 255)',
+    borderRadius: 20,
+    borderWidth: 15,
+    borderStyle: 'none',
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 2
+  },
+
+  logoNav: {
+    textDecoration: 'none',
+    color: ' rgb(255, 165, 0)',
+    backgroundColor: 'rgba(255, 255, 255)',
+    paddingLeft: 10,
+    paddingRight: 25,
+    paddingBottom: 1,
+    paddingTop: 1,
+    borderRadius: 20
   }
 
 };

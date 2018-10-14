@@ -1,7 +1,17 @@
 .headerImg{
+  border-radius: 50%;
   max-width: 30px;
   padding-top: 0px;
+  padding-bottom: 15px;
   margin-right: 3px;
+  width: 15px;
+}
+
+.header{
+  background: orange;
+  padding-top: 5px;
+  padding-bottom: 35px;
+
 }
 
 nav{
@@ -10,7 +20,9 @@ nav{
 
 ul{
   list-style: none;
-  padding: 0px;
+
+  margin-top: 0;
+  padding-top: 15px;
   margin-right: 10%;
   margin-bottom: 0px;
 }
@@ -24,10 +36,11 @@ li{
 .links{
   float: right;
   padding-left: 2%;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .mainLogo{
+  border-radius: 50%;
   width: 150px;
   display: block;
   margin-left: auto;
@@ -49,22 +62,24 @@ li{
 }
 
 input{
+  border-radius: 5px;
   text-align: center;
   margin-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 220px;
-  height: 30px;
+  height: 35px;
   font-size: 20px;
 }
 
-.submitEmail{
+.submitEmail{ /* make border style none on input via GOOGLE */
+  border-radius: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 220px;
-  height: 25px;
+  width: 240px;
+  height: 35px;
   font-size: 20px;
 }
 
@@ -83,9 +98,8 @@ input{
 }
 
 .footer{
-  margin-top: 60px;
-  padding-top: 30px;
-  background-color: orange;
+  margin-top: 40px;
+
 }
 
 p{
@@ -96,12 +110,26 @@ p{
   font-family: Roboto, sans-serif;
 }
 
+.home-quote{
+  background: rgba(255, 0, 0, 0.3)
+}
+
 .screenShot{
+  border-radius: 60px;
   width: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 60px;
+}
+
+.second-paragraph{
+  text-align: center;
+  border-radius: 20px;
+  border-width: 4px;
+  border-style: none;
+  background: rgba(255, 0, 0, 0.3);
+  margin: 30px;
 }
 
 .aboutLM-intro{
@@ -112,7 +140,9 @@ p{
 }
 
 .about-us-body{
-  background-color: orange;
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
 }
 
+.footer-comp{
+  background: orange;
+}

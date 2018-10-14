@@ -12,27 +12,30 @@ class AboutUs extends Component {
   render(){
     return(
       <div>
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <a href="/" alt="home link"><img className="headerImg" src={lendMe} alt="LendMeInc. Logo" align="middle" /><b>LendMe</b></a>
-              </li>
-              <li className="links">
-                <a href="about.js" alt="about us link">about</a>
-              </li>
-              <li className="links">
-                <a href="mission" alt="team mission link">mission</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <section className="header">
+          <header>
+            <nav>
+              <ul>
+                <li>
+                  <a href="/" alt="home link" style={styles.logoNav}><img className="headerImg" src={lendMe} alt="LendMeInc. Logo" align="middle" /><b >LendMe</b></a>
+                </li>
+                <li className="links" style={styles.nav}>
+                  <a href="/about" alt="about us link" style={styles.nav}><b>about us</b></a>
+                </li>
+                <li className="links" style={styles.nav}>
+                  <a href="/mission" alt="team mission link" style={styles.nav}><b>mission</b></a>
+                </li>
+              </ul>
+            </nav>
+          </header>
 
-        <a href="/" alt="home link"><img className="mainLogo" src={lendMe} alt="LendMeInc. Logo" /></a>
+          <a href="/" alt="home link"><img className="mainLogo" src={lendMe} alt="LendMeInc. Logo" /></a>
 
-        <h1 className="mainTitle">
-          LendMe Inc.
-        </h1>
+          <h1 className="mainTitle">
+            LendMe Inc.
+          </h1>
+
+        </section>
 
         <section className="about-us-body">
           <h2 className="aboutLM-intro">
@@ -112,14 +115,14 @@ class AboutUs extends Component {
 
 const styles = {
   borderStyle: {
-      borderWidth: 4,
-      borderStyle: 'none',
-      backgroundColor: 'rgba(255, 255, 255, 0.5)',
-      color: 'rgba(0, 0, 0, 0.7)',
-      padding: 50,
+    borderRadius: 20,
+    borderWidth: 4,
+    borderStyle: 'none',
+    backgroundColor: 'rgba(255, 165, 0, 0.3)',
+    padding: 50,
   },
 
-  inlineLayout: {
+  inlineLayout: { // TODO: display text and image, inline
     marginR: 100,
     marginBottom: 20,
     textAlign: 'center',
@@ -128,6 +131,30 @@ const styles = {
 
   img: {
     marginRight: 10,
+    borderRadius: 20,
+  },
+
+  nav: {
+    textDecoration: 'none',
+    color: ' rgb(255, 165, 0)',
+    backgroundColor: 'rgba(255, 255, 255)',
+    borderRadius: 20,
+    borderWidth: 15,
+    borderStyle: 'none',
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 2
+  },
+
+  logoNav: {
+    textDecoration: 'none',
+    color: ' rgb(255, 165, 0)',
+    backgroundColor: 'rgba(255, 255, 255)',
+    paddingLeft: 10,
+    paddingRight: 25,
+    paddingBottom: 1,
+    paddingTop: 1,
+    borderRadius: 20
   }
 };
 
