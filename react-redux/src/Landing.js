@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import lendMe from '../src/images/lendMe.png';
-import appStores from '../src/images/appStores.png';
+import appleAppStore from '../src/images/apple-appstore-icon.png';
+import googlePlay from '../src/images/google-play.png'
 import screenShot from '../src/images/screenShot.png';
 import Footer from './components/Footer';
+import moneyIcon from '../src/images/money-icon.png'
 
 class Landing extends Component {
   render() {
@@ -38,8 +40,15 @@ class Landing extends Component {
             <button className="submitEmail">Submit</button>
           </section>
 
-          <h4 className="comingSoon">Coming soon to</h4>
-          <img className="appStores" src={appStores} alt="app stores logos" />
+          <div style={appStoresStyle}>
+            <h4 className="comingSoon">Available to</h4>
+            <img className="appStores" style={appImages} src={appleAppStore} alt="app stores logos" />
+          </div>
+
+          <div style={appStoresStyle}>
+            <h4 className="comingSoon">Coming soon to download on</h4>
+            <img style={appImages} className="appStores" src={googlePlay} alt="google play icon" />
+          </div>
         </section>
 
       <section className="footer">
@@ -58,6 +67,24 @@ class Landing extends Component {
       <p style={styles}>
         #open is dedicated to maintaining a safer environment where everyone can be themselves.
       </p>
+      <h2>Our Rules</h2>
+        <hr style={hrStyle}/>
+
+      <div className="landingSubFooter">
+          <img src={moneyIcon} alt="money icon" style={moneyIconStyle} />
+          <b>Academic Subjects</b> they are good at, as well as the teacher they took certain classes
+      </div>
+
+        <section className="landingSubFooter">
+          <img src={moneyIcon} alt="money icon" style={moneyIconStyle} />
+          <b>Everyday Activities</b> such as moving, hauling, ride sharing, etc.
+      </section>
+
+        <section className="landingSubFooter">
+          <img src={moneyIcon} alt="money icon" style={moneyIconStyle}/>
+          <b>Quick, Easy, and Fast</b>
+        </section>
+
       <Footer />
       </div>
     )
@@ -86,7 +113,7 @@ nav = {
   paddingTop: 2
 },
 
-logoNav= {
+logoNav = {
   textDecoration: 'none',
   color: ' rgb(255, 165, 0)',
   backgroundColor: 'rgba(255, 255, 255)',
@@ -95,6 +122,32 @@ logoNav= {
   paddingBottom: 1,
   paddingTop: 1,
   borderRadius: 20
+},
+
+moneyIconStyle ={
+  width: 50,
+  textAlign: 'center',
+  overFlow: 'auto',
+  verticalAlign: 'middle',
+  marginRight: 20
+},
+
+hrStyle = {
+  width: '50%'
+},
+
+appStoresStyle = {
+  textAlign: 'center',
+  verticalAlign: 'middle',
+  overFlow: 'auto',
+},
+
+appImages = {
+
+  textAlign: 'center',
+  overFlow: 'auto',
+  verticalAlign: 'middle',
+  marginLeft: 20
 }
 
 export default Landing;

@@ -92,9 +92,9 @@ input{
 
 .appStores{
   width: 150px;
-  display: block;
+  /* display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .footer{
@@ -141,6 +141,14 @@ p{
 
 .about-us-body{
   padding-bottom: 25px;
+}
+
+.landingSubFooter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
 }
 
 .footer-comp{

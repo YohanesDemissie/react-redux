@@ -95,6 +95,8 @@ const styles = {
     float: 'right',
   },
 
+  //place media query for excessive space between top/bottom margin with the image/text sections
+
   lastPicture: {
     marginBottom: 120,
     textAlign: 'center',
