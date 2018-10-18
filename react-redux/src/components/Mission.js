@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import lendMe from '../images/lendMe.png';
+import collegeCollab from '../images/college-collage.jpg'
 import '../App.css';
 import Footer from './Footer'
 
@@ -49,7 +50,7 @@ class Mission extends Component {
           <div style={styles.inlineLayout}>
             <h3>Inclusion</h3>
             <p>
-              <img style={styles.img} src="https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450" alt="panda" />
+              <img style={styles.img} src={collegeCollab} alt="panda" />
               #open is dedicated, first and foremost, to being inclusive: to accepting people of all gender identities and orientations, from all walks of life, in any sort of relationship that makes you happy, no matter what gets you going
             </p>
           </div>
@@ -87,12 +88,13 @@ const styles = {
   inlineLayout: {
     marginBottom: 200,
     textAlign: 'center',
-    overFlow: 'auto',
+    // overFlow: 'auto',
   },
 
   img: {
     borderRadius: 20,
-    float: 'right',
+    // float: 'right',
+    width: '200px'
   },
 
   //place media query for excessive space between top/bottom margin with the image/text sections

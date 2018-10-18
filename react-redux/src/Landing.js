@@ -35,7 +35,7 @@ class Landing extends Component {
 
           <h4 className="subHeader">Sign up for beta and get updates about launch:</h4>
           <section className="signUp">
-            <input className="emailInput" placeholder="email@lendme.com" />
+            <input className="emailInput" placeholder="email@lendme.edu" />
             <br />
             <button className="submitEmail">Submit</button>
           </section>
@@ -45,7 +45,7 @@ class Landing extends Component {
             <img className="appStores" style={appImages} src={appleAppStore} alt="app stores logos" />
           </div>
 
-          <div style={appStoresStyle}>
+          <div style={appStoresStyleTwo}>
             <h4 className="comingSoon">Coming soon to download on</h4>
             <img style={appImages} className="appStores" src={googlePlay} alt="google play icon" />
           </div>
@@ -140,6 +140,13 @@ appStoresStyle = {
   textAlign: 'center',
   verticalAlign: 'middle',
   overFlow: 'auto',
+},
+
+appStoresStyleTwo = {
+  textAlign: 'center',
+  verticalAlign: 'middle',
+  overFlow: 'auto',
+  marginTop: 10
 },
 
 appImages = {

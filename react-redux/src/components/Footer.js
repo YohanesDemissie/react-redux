@@ -12,7 +12,7 @@ class Footer extends Component{
         <a href="https://www.instagram.com/lendme_inc/" target="_blank"><img style={style.sizes} src={instagramIcon} alt="instagram icon" /></a>
         <a href="https://twitter.com/LendMeInc" target="_blank"><img style={style.sizes} src={twitterIcon} alt="twitter icon" /></a>
         <p style={copyRight}>&copy; LendMe Inc.</p>
-        <a style={footerLinks} href="https://termsfeed.com/privacy-policy/70907199871db6348be84738975e5c75">Privacy Policy</a>
+        <a style={footerLinks} href="https://termsfeed.com/privacy-policy/70907199871db6348be84738975e5c75">Privacy Policy |</a>
         <a style={footerLinks} href="https://termsfeed.com/terms-use/f3004ee240c09ad7cdeda64c0ba0e5ba">Terms and Use</a>
       </div>
     )

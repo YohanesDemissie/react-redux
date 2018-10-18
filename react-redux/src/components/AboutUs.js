@@ -43,10 +43,10 @@ class AboutUs extends Component {
           </h2>
 
           <p className="about-ceo-quote" style={styles.borderStyle}>
-            "As someone who struggled through college with little support on such a big campus, I want to make sure students have the necessary resources to succeed in their academic endeavors while bring a large campus of various diversities, together"
+            "As someone who struggled through college with little support on such a big campus, I want to make sure students have the necessary resources to succeed in their academic endeavors while bringing a large campus of various diversities, together"
             <br />
             <br />
-              -Amanuail Mekonen, Proud Founder and CEO
+              -Amanuail Mekonnen, Founder &amp; CEO
           </p>
 
           <section className="team-bio">
@@ -58,7 +58,7 @@ class AboutUs extends Component {
 
             <div style={styles.inlineLayout}>
             <h2 className="dev-names">
-                Amanuail Mekonen, <br />  Proud Founder and CEO
+                Amanuail Mekonnen, <br /> Founder &amp; CEO
           </h2>
               <img style={styles.img} src={Amanuail} width="200" alt="Amanuail Ambaye" />
             <p className="dev-bio">
@@ -71,6 +71,7 @@ class AboutUs extends Component {
           </p>
           </div>
 
+
             <div style={styles.inlineLayout}>
               <h2 className="dev-names">
                 Yohannes Tsegay, <br />Senior Executive Adviser
@@ -81,6 +82,7 @@ class AboutUs extends Component {
                 for Microsoft, Yohannes now holds as a Senior Executive Director position at Ebay.
               </p>
             </div>
+
 
             <div style={styles.inlineLayout}>
               <h2 className="dev-names">
@@ -93,6 +95,7 @@ class AboutUs extends Component {
                 Seattle, WA
           </p>
             </div>
+
 
             <div style={styles.inlineLayout}>
             <h2 className="dev-names">
