@@ -60,16 +60,20 @@ class Landing extends Component {
 
         <span>
           <p style={styles}>
-            <b>Whether solo or partnered, LendMe allows you to self-identify, express your preferences and boundaries, and find others who are into whatever you're into.</b>
+            <b>
+              Whether solo or partnered, LendMe allows you to schedule tutor sessions with your peers at your own price, scheduled at your own time, and overall leaving you satisfied with our user-friendly platform.
+            </b>
           </p>
           <img className="screenShot" src={screenShot} alt="application screenshot" />
         </span>
 
       </section>
       <p style={styles}>
-        #open is dedicated to maintaining a safer environment where everyone can be themselves.
+        <b>
+          LendMe will continue to aim at contributing towards the needs and success for college students across the nation.
+        </b>
       </p>
-      <h2>Our Rules</h2>
+      <h2 className="rulesHeader">Code of Conduct</h2>
         <hr style={hrStyle}/>
 
       <div className="landingSubFooter">
@@ -172,7 +176,7 @@ appStores = {
 },
 
 appStoresStyle = {
-  paddingTop: 20,
+  paddingTop: 15,
   paddingRight: 20,
   display: 'inline-block',
   // textAlign: 'center',
