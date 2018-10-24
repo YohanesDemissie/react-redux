@@ -51,7 +51,12 @@ class Mission extends Component {
             <h3>Inclusion</h3>
             <p>
               <img style={styles.img} src={collegeCollab} alt="panda" />
-              #open is dedicated, first and foremost, to being inclusive: to accepting people of all gender identities and orientations, from all walks of life, in any sort of relationship that makes you happy, no matter what gets you going
+              At LendMe, it is vital that we cover all different aspects of what our society views as a “college student”.
+              We are not focusing solely on the student that is taking 12-15 credits a quarter/semester and walking to
+              and from their respective college dorms/fraternity – LendMe is here for the students taking on multiple
+              lead roles in their respective clubs; for the students who have to go in for their day/evening shifts
+              immediately after class—as well as the ones who just got off from the night before. Regardless of the
+              student-dynamics, LendMe will assist to cover them all.
             </p>
           </div>
 
@@ -59,7 +64,17 @@ class Mission extends Component {
             <h3>Community</h3>
             <p>
               <img style={styles.img} src="https://www.telegraph.co.uk/content/dam/news/2016/08/23/106598324PandawaveNEWS_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450" alt="panda" />
-              To provide that freedom, #open has to be more than just a dating app–it has to be a community. Maintaining a community requires more than just showing up! We all rely upon each other to ensure that our community remains inclusive, accepting, and friendly.            </p>
+              LendMe’s immediate focus, is to not only bring together a community that carries the norm hustle &amp;
+              grind, while sharing the same passion every Saturday – but to also help build a network outside of one’s
+              collegiate year without the worry and concern of job-hunting, career climbing, and missed
+              opportunities. We understand that many students enter college not knowing what major to apply for, or
+              even a career to pursue. We also understand that those passions don’t necessarily come to light until
+              the 3 rd or 4 th year in—an area where most students tend to hit the panic button. As LendMe grows, we
+              will focus more to solve these areas by offering internships, job-shadowing, and consultation
+              opportunities within areas of each student’s interests. Our goal is to replace the valuable time a college
+              student faces with a pipeline that leads to their goals through peer-tutoring, network building, and
+              efficiency.
+            </p>
           </div>
 
           <div style={styles.lastPicture}>
@@ -86,15 +101,16 @@ const styles = {
   },
 
   inlineLayout: {
-    marginBottom: 200,
     textAlign: 'center',
-    // overFlow: 'auto',
   },
 
   img: {
     borderRadius: 20,
-    // float: 'right',
-    width: '200px'
+    float: 'right',
+    width: '200px',
+    marginLeft: 20,
+    wordWrap: 'break-word',
+
   },
 
   //place media query for excessive space between top/bottom margin with the image/text sections

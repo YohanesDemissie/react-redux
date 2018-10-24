@@ -40,14 +40,16 @@ class Landing extends Component {
             <button className="submitEmail">Submit</button>
           </section>
 
-          <div style={appStoresStyle}>
-            <h4 className="comingSoon">Available to</h4>
-            <img className="appStores" style={appImages} src={appleAppStore} alt="app stores logos" />
-          </div>
+          <div style={appStores}>
+            <section style={appStoresStyle}>
+              <h4 className="comingSoon">Available to</h4>
+              <img className="appStores" style={appImages} src={appleAppStore} alt="app stores logos" />
+            </section>
 
-          <div style={appStoresStyleTwo}>
-            <h4 className="comingSoon">Coming soon to download on</h4>
-            <img style={appImages} className="appStores" src={googlePlay} alt="google play icon" />
+            <section style={appStoresStyleTwo}>
+              <h4 className="comingSoonTwo">Coming soon to</h4>
+              <img style={appImages} className="appStores" src={googlePlay} alt="google play icon" />
+            </section>
           </div>
         </section>
 
@@ -72,18 +74,39 @@ class Landing extends Component {
 
       <div className="landingSubFooter">
           <img src={moneyIcon} alt="money icon" style={moneyIconStyle} />
-          <b>Academic Subjects</b> they are good at, as well as the teacher they took certain classes
+          <b>Keep it Academic -</b> Not like the other “Academic”, LendMe is a place for students to post their skill-sets
+          and academic success along with classes/subjects one may need help with. LendMe is not a place to
+          spread social gossip, slander, or inappropriate behavior. We carry a zero tolerance behind this rule and
+          once discovered, the acting student will be served a lifetime ban from using LendMe, and any and all
+          LendMe Inc. provided services.
       </div>
+      <br />
 
         <section className="landingSubFooter">
           <img src={moneyIcon} alt="money icon" style={moneyIconStyle} />
-          <b>Everyday Activities</b> such as moving, hauling, ride sharing, etc.
+          <b>No scrubs</b> If we find that students are beginning to manipulate the services provided by LendMe,
+          especially if the tutors provided are being taken advantage of as a result – this could mean students
+          bringing on friends/other students while only paying for one to one sessions, excessive cancellations/no
+          shows, will be subject to consequences and possible probationary periods. Time is valuable for both
+          parties.
       </section>
+        <br />
+
 
         <section className="landingSubFooter">
           <img src={moneyIcon} alt="money icon" style={moneyIconStyle}/>
-          <b>Quick, Easy, and Fast</b>
+          <b>SAFETY – We’re putting this in bold because this is our number one priority. If at any time we have
+            received a report of any form of sexual assault, harassment, and/or violent behavior, our offices will
+            not take this position lightly. We will not only make sure you banned across all our platforms, but we
+            will also provide an attorney for the victim(s) and assist local law enforcements and authorities to
+            make sure you and/or the involved parties will not be seeing the light of day any time soon. We will
+            make sure you do not receive a simple 90-day probationary period like other justice systems have
+            permitted (because frankly, we don’t care if the sentence will hinder your future, your act was forever
+            life-changing for the victim). We will pursue the maximum sentences not only in criminal court, but
+            also in civil court in pursuit of restitution. WE-DON’T-PLAY-PERIOD.
+          </b>
         </section>
+        <br />
 
       <Footer />
       </div>
@@ -125,7 +148,7 @@ logoNav = {
 },
 
 moneyIconStyle ={
-  width: 50,
+  width: 100,
   textAlign: 'center',
   overFlow: 'auto',
   verticalAlign: 'middle',
@@ -136,17 +159,32 @@ hrStyle = {
   width: '50%'
 },
 
-appStoresStyle = {
+appStores = {
   textAlign: 'center',
+  verticalAlign: 'middle',
+},
+
+appStoresStyle = {
+  paddingTop: 20,
+  paddingRight: 20,
+  display: 'inline-block',
+  // textAlign: 'center',
   verticalAlign: 'middle',
   overFlow: 'auto',
 },
 
 appStoresStyleTwo = {
+  // borderLeft: 'solid',
+  // padding: 5,
+  paddingLeft: 20,
+  
+
+  margin: 'auto',
+  display: 'inline-block',
   textAlign: 'center',
   verticalAlign: 'middle',
   overFlow: 'auto',
-  marginTop: 10
+  paddingTop: 10,
 },
 
 appImages = {
