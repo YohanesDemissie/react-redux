@@ -74,28 +74,33 @@ class Landing extends Component {
 
       <div className="landingSubFooter">
           <img src={moneyIcon} alt="money icon" style={moneyIconStyle} />
-          <b>Keep it Academic -</b> Not like the other “Academic”, LendMe is a place for students to post their skill-sets
-          and academic success along with classes/subjects one may need help with. LendMe is not a place to
-          spread social gossip, slander, or inappropriate behavior. We carry a zero tolerance behind this rule and
-          once discovered, the acting student will be served a lifetime ban from using LendMe, and any and all
-          LendMe Inc. provided services.
+          <p className="rulesText">
+            <b>Keep it Academic -</b> Not like the other “Academic”, LendMe is a place for students to post their skill-sets
+            and academic success along with classes/subjects one may need help with. LendMe is not a place to
+            spread social gossip, slander, or inappropriate behavior. We carry a zero tolerance behind this rule and
+            once discovered, the acting student will be served a lifetime ban from using LendMe, and any and all
+            LendMe Inc. provided services.
+          </p>
       </div>
       <br />
 
         <section className="landingSubFooter">
           <img src={moneyIcon} alt="money icon" style={moneyIconStyle} />
-          <b>No scrubs</b> If we find that students are beginning to manipulate the services provided by LendMe,
-          especially if the tutors provided are being taken advantage of as a result – this could mean students
-          bringing on friends/other students while only paying for one to one sessions, excessive cancellations/no
-          shows, will be subject to consequences and possible probationary periods. Time is valuable for both
-          parties.
+          <p className="rulesText">
+            <b>No scrubs -</b> If we find that students are beginning to manipulate the services provided by LendMe,
+            especially if the tutors provided are being taken advantage of as a result – this could mean students
+            bringing on friends/other students while only paying for one to one sessions, excessive cancellations/no
+            shows, will be subject to consequences and possible probationary periods. Time is valuable for both
+            parties.
+          </p>
       </section>
         <br />
 
 
         <section className="landingSubFooter">
           <img src={moneyIcon} alt="money icon" style={moneyIconStyle}/>
-          <b>SAFETY – We’re putting this in bold because this is our number one priority. If at any time we have
+          <p className="rulesText">
+            <b>SAFETY – We’re putting this in bold because this is our number one priority. If at any time we have
             received a report of any form of sexual assault, harassment, and/or violent behavior, our offices will
             not take this position lightly. We will not only make sure you banned across all our platforms, but we
             will also provide an attorney for the victim(s) and assist local law enforcements and authorities to
@@ -104,7 +109,8 @@ class Landing extends Component {
             permitted (because frankly, we don’t care if the sentence will hinder your future, your act was forever
             life-changing for the victim). We will pursue the maximum sentences not only in criminal court, but
             also in civil court in pursuit of restitution. WE-DON’T-PLAY-PERIOD.
-          </b>
+            </b>
+          </p>
         </section>
         <br />
 
@@ -148,15 +154,16 @@ logoNav = {
 },
 
 moneyIconStyle ={
-  width: 100,
-  textAlign: 'center',
-  overFlow: 'auto',
+  float: 'left',
+  width: '100px',
+  marginLeft: 20,
+  // overFlow: 'auto',
   verticalAlign: 'middle',
-  marginRight: 20
+  // marginRight: 20
 },
 
 hrStyle = {
-  width: '50%'
+  width: '70%'
 },
 
 appStores = {

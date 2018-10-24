@@ -109,7 +109,6 @@ const styles = {
     float: 'right',
     width: '200px',
     marginLeft: 20,
-    wordWrap: 'break-word',
 
   },
 

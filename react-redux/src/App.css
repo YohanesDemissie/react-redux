@@ -154,10 +154,15 @@ p{
 }
 
 .landingSubFooter{
-  margin-left: 500px;
-  margin-right: 500px;
-  /* text-align: center;  */
+  margin-left: 20%;
+  /*margin-right: 20%; */
   
+}
+
+.rulesText{
+  text-align: left; 
+  margin-left: 150px;
+  word-wrap: break-word;
 }
 
 .footer-comp{
